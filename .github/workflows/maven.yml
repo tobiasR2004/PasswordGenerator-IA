@@ -24,7 +24,7 @@ jobs:
 
       # 4. Ejecuta los tests y genera el reporte
       - name: Build with Maven
-        run: ./mvn -B clean test jacoco:report
+        run: mvn -B clean test jacoco:report
 
       # 5. Sube el reporte HTML como un "Artefacto" para que lo puedas descargar
       - name: Upload JaCoCo Report
